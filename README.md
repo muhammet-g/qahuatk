@@ -82,6 +82,12 @@ npm audit
 
 فحص الاعتماديات أمنياً.
 
+```bash
+npm run optimize:images
+```
+
+ضغط صور `src/asesset/images` وتوليد نسخ WebP داخل `src/asesset/images-optimized`.
+
 ## النشر على GitHub Pages
 
 المشروع يستخدم Vite، لذلك يجب نشر نسخة `dist` الناتجة من `npm run build` وليس ملفات المصدر مباشرة.
@@ -172,6 +178,20 @@ src/data/drinks.json
 
 ملف `src/data/menu.js` يقرأ JSON ويحوّل مسارات الصور إلى أصول صالحة داخل Vite باستخدام `import.meta.glob`.
 
+التطبيق يفضّل النسخ المحسّنة من:
+
+```text
+src/asesset/images-optimized/
+```
+
+الصور الأصلية تبقى في:
+
+```text
+src/asesset/images/
+```
+
+لكنها لا تدخل في build طالما توجد نسخة WebP محسّنة.
+
 ## إضافة مشروب جديد
 
 1. أضف صورة المنتج داخل التصنيف المناسب في:
@@ -231,7 +251,7 @@ qahuatk-cart
 ## ملاحظات تطوير
 
 - لا تعدّل ملفات `dist` يدوياً، لأنها تنتج من `npm run build`.
-- الصور كبيرة نسبياً، لذلك يمكن لاحقاً تحسين الأداء بضغط الصور أو تحويلها إلى WebP.
+- عند إضافة صور جديدة، شغّل `npm run optimize:images` قبل البناء أو النشر.
 - اسم مجلد الصور الحالي هو `asesset` كما هو موجود في المشروع. إذا تم تغييره إلى `assets` يجب تحديث المسارات في `drinks.json` و`menu.js`.
 
 ## حالة التحقق

@@ -1,12 +1,15 @@
 import drinks from "./drinks.json";
 
-const imageModules = import.meta.glob("../asesset/images/**/*.png", {
+const optimizedImageModules = import.meta.glob("../asesset/images-optimized/**/*.webp", {
   eager: true,
   import: "default",
   query: "?url",
 });
 
-const resolveImage = (path) => imageModules[path] || path;
+const getOptimizedPath = (path) =>
+  path.replace("../asesset/images/", "../asesset/images-optimized/").replace(/\.png$/i, ".webp");
+
+const resolveImage = (path) => optimizedImageModules[getOptimizedPath(path)] || path;
 
 const productDescription = (components) => `يتكون من ${components.join("، ")}.`;
 

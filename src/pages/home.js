@@ -3,7 +3,7 @@ import { appHeader, bottomNav, icon, searchBox } from "../components/layout.js";
 
 const categoryCard = (category) => `
   <a class="category-card" href="#/category/${category.id}">
-    <img src="${category.image}" alt="" />
+    <img src="${category.image}" alt="" loading="lazy" decoding="async" />
     <div class="category-card__overlay"></div>
     <div class="category-card__content">
       <div>

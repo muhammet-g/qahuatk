@@ -6,7 +6,7 @@ const filters = [["all", "الكل"], ...categories.map((category) => [category.
 const productCard = (product) => `
   <a class="product-card" href="#/product/${product.id}">
     <div class="product-card__media">
-      <img src="${product.image}" alt="${product.name}" />
+      <img src="${product.image}" alt="${product.name}" loading="lazy" decoding="async" />
     </div>
     <div class="product-card__body">
       <h2>${product.name}</h2>

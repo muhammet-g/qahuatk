@@ -7,7 +7,7 @@ export const productPage = (id = "latte") => {
   return `
     <div class="page product-page" data-product-id="${product.id}" data-price="${product.price}">
       <section class="product-hero">
-        <img src="${product.hero}" alt="${product.name}" />
+        <img src="${product.hero}" alt="${product.name}" loading="eager" decoding="async" fetchpriority="high" />
         <div class="product-hero__shade"></div>
         <header class="product-hero__header">
           <button class="icon-button icon-button--glass" data-action="back" aria-label="العودة">

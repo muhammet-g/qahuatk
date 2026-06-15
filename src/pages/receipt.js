@@ -15,7 +15,7 @@ const receiptItem = (item) => {
 
   return `
     <article class="receipt-item" data-cart-id="${item.cartId}">
-      <img src="${item.image}" alt="${item.name}" />
+      <img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async" />
       <div class="receipt-item__body">
         <h3>${item.name}</h3>
         <p>${sizeLabels[item.size] || item.size}${addons}</p>
