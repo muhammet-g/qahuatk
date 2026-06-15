@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/qahuatk/",
+  base: process.env.VERCEL ? "/" : "/qahuatk/",
 });
