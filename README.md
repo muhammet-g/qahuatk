@@ -82,6 +82,36 @@ npm audit
 
 فحص الاعتماديات أمنياً.
 
+## النشر على GitHub Pages
+
+المشروع يستخدم Vite، لذلك يجب نشر نسخة `dist` الناتجة من `npm run build` وليس ملفات المصدر مباشرة.
+
+تم ضبط `vite.config.js` على:
+
+```js
+base: "/qahuatk/"
+```
+
+هذا ضروري لأن رابط GitHub Pages للمشروع يعمل داخل مسار فرعي:
+
+```text
+https://muhammet-g.github.io/qahuatk/
+```
+
+يوجد workflow جاهز في:
+
+```text
+.github/workflows/deploy.yml
+```
+
+بعد الدفع إلى `main`، سيقوم GitHub Actions بتثبيت الاعتماديات، بناء المشروع، ثم نشر مجلد `dist` على GitHub Pages.
+
+من إعدادات المستودع في GitHub تأكد أن:
+
+```text
+Settings > Pages > Build and deployment > Source = GitHub Actions
+```
+
 ## هيكل المشروع
 
 ```text
