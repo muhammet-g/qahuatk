@@ -1,0 +1,282 @@
+{
+  "categories": [
+    {
+      "id": "hot_drink",
+      "title": "قهوة ساخنة",
+      "icon": "local_cafe",
+      "image": "../asesset/images/hot_drink/Latte.png"
+    },
+    {
+      "id": "cold_drink",
+      "title": "قهوة باردة",
+      "icon": "ac_unit",
+      "image": "../asesset/images/cold_drink/Iced Latte.png"
+    },
+    {
+      "id": "warm_drink",
+      "title": "مشروبات دافئة",
+      "icon": "emoji_food_beverage",
+      "image": "../asesset/images/warm_drink/Hot Chocolate.png"
+    },
+    {
+      "id": "tea",
+      "title": "شاي",
+      "icon": "local_drink",
+      "image": "../asesset/images/tea/Green Tea with Mint.png"
+    },
+    {
+      "id": "natural_juices",
+      "title": "عصائر طبيعية",
+      "icon": "nutrition",
+      "image": "../asesset/images/natural_juices/Fresh Orange Juice.png"
+    },
+    {
+      "id": "mojito_and_milkshakes",
+      "title": "موهيتو وميلك شيك",
+      "icon": "icecream",
+      "image": "../asesset/images/mojito_and_milkshakes/Strawberry Mojito (Non-Alcoholic).png"
+    }
+  ],
+  "products": [
+    {
+      "id": "espresso",
+      "name": "إسبريسو",
+      "category": "hot_drink",
+      "price": 14,
+      "image": "../asesset/images/hot_drink/Espresso.png",
+      "components": ["قهوة إسبريسو مركزة", "كريمة قهوة خفيفة"]
+    },
+    {
+      "id": "americano",
+      "name": "أمريكانو",
+      "category": "hot_drink",
+      "price": 16,
+      "image": "../asesset/images/hot_drink/Americano.png",
+      "components": ["إسبريسو", "ماء ساخن"]
+    },
+    {
+      "id": "latte",
+      "name": "لاتيه",
+      "category": "hot_drink",
+      "price": 22,
+      "image": "../asesset/images/hot_drink/Latte.png",
+      "components": ["إسبريسو", "حليب مبخر", "رغوة حليب ناعمة"]
+    },
+    {
+      "id": "cappuccino",
+      "name": "كابتشينو",
+      "category": "hot_drink",
+      "price": 21,
+      "image": "../asesset/images/hot_drink/Cappuccino.png",
+      "components": ["إسبريسو", "حليب مبخر", "رغوة كثيفة"]
+    },
+    {
+      "id": "mocha",
+      "name": "موكا",
+      "category": "hot_drink",
+      "price": 24,
+      "image": "../asesset/images/hot_drink/Mocha.png",
+      "components": ["إسبريسو", "حليب", "شوكولاتة", "رغوة حليب"]
+    },
+    {
+      "id": "cold-brew",
+      "name": "كولد برو",
+      "category": "cold_drink",
+      "price": 22,
+      "image": "../asesset/images/cold_drink/Cold Brew.png",
+      "components": ["قهوة منقوعة باردة", "ثلج"]
+    },
+    {
+      "id": "iced-americano",
+      "name": "آيس أمريكانو",
+      "category": "cold_drink",
+      "price": 18,
+      "image": "../asesset/images/cold_drink/Iced Americano.png",
+      "components": ["إسبريسو", "ماء بارد", "ثلج"]
+    },
+    {
+      "id": "iced-latte",
+      "name": "آيس لاتيه",
+      "category": "cold_drink",
+      "price": 23,
+      "image": "../asesset/images/cold_drink/Iced Latte.png",
+      "components": ["إسبريسو", "حليب بارد", "ثلج"]
+    },
+    {
+      "id": "iced-caramel-latte",
+      "name": "آيس كراميل لاتيه",
+      "category": "cold_drink",
+      "price": 26,
+      "image": "../asesset/images/cold_drink/Iced Caramel Latte.png",
+      "components": ["إسبريسو", "حليب بارد", "صوص كراميل", "ثلج"]
+    },
+    {
+      "id": "iced-mocha",
+      "name": "آيس موكا",
+      "category": "cold_drink",
+      "price": 26,
+      "image": "../asesset/images/cold_drink/Iced Mocha.png",
+      "components": ["إسبريسو", "حليب بارد", "شوكولاتة", "ثلج"]
+    },
+    {
+      "id": "hot-chocolate",
+      "name": "هوت شوكليت",
+      "category": "warm_drink",
+      "price": 20,
+      "image": "../asesset/images/warm_drink/Hot Chocolate.png",
+      "components": ["حليب ساخن", "كاكاو", "شوكولاتة"]
+    },
+    {
+      "id": "chai-latte",
+      "name": "تشاي لاتيه",
+      "category": "warm_drink",
+      "price": 21,
+      "image": "../asesset/images/warm_drink/Chai Latte.png",
+      "components": ["شاي أسود", "حليب", "بهارات تشاي"]
+    },
+    {
+      "id": "hot-matcha-latte",
+      "name": "ماتشا لاتيه ساخن",
+      "category": "warm_drink",
+      "price": 24,
+      "image": "../asesset/images/warm_drink/Hot Matcha Latte.png",
+      "components": ["ماتشا", "حليب مبخر", "لمسة فانيلا"]
+    },
+    {
+      "id": "karak-tea",
+      "name": "شاي كرك",
+      "category": "warm_drink",
+      "price": 15,
+      "image": "../asesset/images/warm_drink/Karak Tea.png",
+      "components": ["شاي أسود", "حليب", "هيل", "زعفران خفيف"]
+    },
+    {
+      "id": "sahlab",
+      "name": "سحلب",
+      "category": "warm_drink",
+      "price": 18,
+      "image": "../asesset/images/warm_drink/Sahlab.png",
+      "components": ["حليب", "بودرة سحلب", "قرفة", "مكسرات"]
+    },
+    {
+      "id": "black-tea",
+      "name": "شاي أسود",
+      "category": "tea",
+      "price": 10,
+      "image": "../asesset/images/tea/Black Tea.png",
+      "components": ["شاي أسود", "ماء ساخن"]
+    },
+    {
+      "id": "english-tea",
+      "name": "شاي إنجليزي",
+      "category": "tea",
+      "price": 13,
+      "image": "../asesset/images/tea/English Tea.png",
+      "components": ["شاي أسود", "حليب", "سكر اختياري"]
+    },
+    {
+      "id": "green-tea-mint",
+      "name": "شاي أخضر بالنعناع",
+      "category": "tea",
+      "price": 12,
+      "image": "../asesset/images/tea/Green Tea with Mint.png",
+      "components": ["شاي أخضر", "نعناع طازج"]
+    },
+    {
+      "id": "chamomile-tea",
+      "name": "شاي بابونج",
+      "category": "tea",
+      "price": 12,
+      "image": "../asesset/images/tea/Chamomile Tea.png",
+      "components": ["بابونج", "ماء ساخن", "عسل اختياري"]
+    },
+    {
+      "id": "lemon-tea",
+      "name": "شاي ليمون",
+      "category": "tea",
+      "price": 12,
+      "image": "../asesset/images/tea/Lemon Tea.png",
+      "components": ["شاي أسود", "ليمون", "عسل اختياري"]
+    },
+    {
+      "id": "fresh-orange-juice",
+      "name": "عصير برتقال طازج",
+      "category": "natural_juices",
+      "price": 18,
+      "image": "../asesset/images/natural_juices/Fresh Orange Juice.png",
+      "components": ["برتقال طازج"]
+    },
+    {
+      "id": "fresh-mango-juice",
+      "name": "عصير مانجو طازج",
+      "category": "natural_juices",
+      "price": 20,
+      "image": "../asesset/images/natural_juices/Fresh Mango Juice.png",
+      "components": ["مانجو", "ثلج", "سكر خفيف اختياري"]
+    },
+    {
+      "id": "fresh-strawberry-juice",
+      "name": "عصير فراولة طازج",
+      "category": "natural_juices",
+      "price": 20,
+      "image": "../asesset/images/natural_juices/Fresh Strawberry Juice.png",
+      "components": ["فراولة", "ثلج", "سكر خفيف اختياري"]
+    },
+    {
+      "id": "fresh-fruit-cocktail",
+      "name": "كوكتيل فواكه طازج",
+      "category": "natural_juices",
+      "price": 24,
+      "image": "../asesset/images/natural_juices/Fresh Fruit Cocktail.png",
+      "components": ["برتقال", "مانجو", "فراولة", "تفاح"]
+    },
+    {
+      "id": "mint-lemon-juice",
+      "name": "ليمون نعناع",
+      "category": "natural_juices",
+      "price": 18,
+      "image": "../asesset/images/natural_juices/Mint Lemon Mojito.png",
+      "components": ["ليمون", "نعناع", "ثلج", "ماء فوار خفيف"]
+    },
+    {
+      "id": "strawberry-mojito",
+      "name": "موهيتو فراولة",
+      "category": "mojito_and_milkshakes",
+      "price": 24,
+      "image": "../asesset/images/mojito_and_milkshakes/Strawberry Mojito (Non-Alcoholic).png",
+      "components": ["فراولة", "نعناع", "ليمون", "ماء فوار", "ثلج"]
+    },
+    {
+      "id": "passion-fruit-mojito",
+      "name": "موهيتو باشن فروت",
+      "category": "mojito_and_milkshakes",
+      "price": 25,
+      "image": "../asesset/images/mojito_and_milkshakes/Passion Fruit Mojito (Non-Alcoholic).png",
+      "components": ["باشن فروت", "نعناع", "ليمون", "ماء فوار", "ثلج"]
+    },
+    {
+      "id": "mint-lemon-mojito",
+      "name": "موهيتو ليمون نعناع",
+      "category": "mojito_and_milkshakes",
+      "price": 22,
+      "image": "../asesset/images/mojito_and_milkshakes/Mint Lemon Mojito (Non-Alcoholic).png",
+      "components": ["ليمون", "نعناع", "ماء فوار", "ثلج"]
+    },
+    {
+      "id": "chocolate-milkshake",
+      "name": "ميلك شيك شوكولاتة",
+      "category": "mojito_and_milkshakes",
+      "price": 27,
+      "image": "../asesset/images/mojito_and_milkshakes/Chocolate Milkshake.png",
+      "components": ["آيس كريم فانيلا", "حليب", "شوكولاتة"]
+    },
+    {
+      "id": "cookies-cream-milkshake",
+      "name": "ميلك شيك كوكيز وكريمة",
+      "category": "mojito_and_milkshakes",
+      "price": 28,
+      "image": "../asesset/images/mojito_and_milkshakes/Cookies and Cream Milkshake.png",
+      "components": ["آيس كريم فانيلا", "حليب", "بسكويت كوكيز", "كريمة"]
+    }
+  ]
+}

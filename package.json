@@ -1,0 +1,16 @@
+{
+  "name": "qahuatk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite --host 0.0.0.0",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2",
+    "vite": "^8.0.16"
+  }
+}
